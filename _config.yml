@@ -1,0 +1,39 @@
+# Site settings
+title: 'Chirag Maheshwari'
+description: 'Developer | Geek | Sophomore'
+url: ''
+baseurl: ''
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Chirag Maheshwari'
+  email: csoni111@gmail.com
+  twitter_username: csoni11
+  facebook_username: cmaheshwari11
+  github_username: csoni111
+  linkedin_username: csoni111
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
